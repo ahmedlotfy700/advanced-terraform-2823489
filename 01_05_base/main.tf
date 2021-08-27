@@ -79,7 +79,7 @@ resource "aws_route_table_association" "route-subnet1" {
   route_table_id = aws_route_table.route_table1.id
 }
 
-# SECURITY_GROUP
+# SECURITY_GROUPs 
 resource "aws_security_group" "sg-nodejs-instance" {
   name = "nodejs_sg"
   vpc_id = aws_vpc.vpc1.id
